@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-family:'geologica', sans-serif;
+}
+
+.title{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(202, 13, 10);
+}
+
+.container{
+    display: flex;
+    /* padding: 5rem; */
+    align-items: center;
+    /* justify-content: center; */
+    background-color: white;
+    width: 50%;
+    height: 20rem;
+    border-radius: .3rem;
+    margin-top: 8rem;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0,0, 0.2);
+}
+
+.top{
+    margin-top: 1rem;
+    color: #ca0d0a;
+}
+
+.matric-no,.name{
+ margin-bottom: 1.5rem;
+ width: 100%;
+ height: 2.5rem;
+ border: 1px solid rgb(202, 202, 202);
+ border-radius: .3rem;
+text-indent: .5rem;
+}
+
+.form{
+    margin-top: 2.5rem;
+}
+
+.submit{
+ margin-bottom: 1.5rem;
+ width: 100%;
+ height: 2.5rem;
+ border: none;
+ background-color: #ca0d0a;
+ border-radius: .3rem;
+ color: white;
+ cursor: pointer;
+}
+
+.submit:hover{
+    opacity: .8;
+}
+
+@media all and (max-width: 920px) {
+    .title {
+        padding: 0;
+        margin: 50px 20px;
+    }
+    .container {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+        color: red;
+        padding: 20px;
+        height: fit-content;
+    }
+    .top {
+        margin: 10px 0 0;
+    }
+}
